@@ -4,7 +4,7 @@ export default {
   port: 8080, // 本地开发服务器的启动端口
   domain: 'dubbo.apache.org', // 站点部署域名，无需协议和path等
   defaultSearch: 'google', // 默认搜索引擎，baidu或者google
-  defaultLanguage: 'en-us',
+  defaultLanguage: 'zh-cn',
   'en-us': {
     pageMenu: [
       {
@@ -13,19 +13,24 @@ export default {
         link: '/en-us/index.html',
       },
       {
-        key: 'docs',
-        text: 'DOCS',
-        link: '/en-us/docs/demo1.html',
+        key: 'landscape',
+        text: 'Landscape',
+        link: 'https://landscape.devnative.io/en-us/landscape/index.html',
       },
       {
-        key: 'blog',
-        text: 'BLOG',
-        link: '/en-us/blog/index.html',
+        key: 'evaluation',
+        text: 'Evaluation',
+        link: 'https://landscape.devnative.io/en-us/evaluation/index.html',
       },
       {
-        key: 'community',
-        text: 'COMMUNITY',
-        link: '/en-us/community/index.html',
+        key: 'activities',
+        text: 'Activities',
+        link: '/en-us/activities/index.html',
+      },
+      {
+        key: 'news',
+        text: 'News',
+        link: '/en-us/news/index.html',
       },
     ],
     disclaimer: {
@@ -62,7 +67,7 @@ export default {
         },
       ],
     },
-    copyright: 'Copyright © 2018 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    copyright: 'Copyright © 2019 The Develop Native Authors. All rights reserved.',
   },
   'zh-cn': {
     pageMenu: [
@@ -72,19 +77,24 @@ export default {
         link: '/zh-cn/index.html',
       },
       {
-        key: 'docs',
-        text: '文档',
-        link: '/zh-cn/docs/demo1.html',
+        key: 'landscape',
+        text: 'Landscape',
+        link: 'https://landscape.devnative.io/zh-cn/landscape/index.html',
       },
       {
-        key: 'blog',
-        text: '博客',
-        link: '/zh-cn/blog/index.html',
+        key: 'evaluation',
+        text: '测评',
+        link: 'https://landscape.devnative.io/zh-cn/evaluation/index.html',
       },
       {
-        key: 'community',
-        text: '社区',
-        link: '/zh-cn/community/index.html',
+        key: 'activities',
+        text: '活动',
+        link: '/zh-cn/activities/index.html',
+      },
+      {
+        key: 'news',
+        text: '新闻',
+        link: '/zh-cn/news/index.html',
       },
     ],
     disclaimer: {
@@ -121,6 +131,6 @@ export default {
         },
       ],
     },
-    copyright: 'Copyright © 2018 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    copyright: 'Copyright © 2019 The Develop Native Authors. All rights reserved.',
   },
 };
