@@ -8,6 +8,7 @@ const propTypes = {
   type: PropTypes.oneOf(['primary', 'normal']),
   link: PropTypes.string,
   target: PropTypes.string,
+  customClass: PropTypes.string,
 };
 const defaultProps = {
   type: 'primary',
@@ -21,6 +22,7 @@ const Button = (props) => {
         classnames({
           button: true,
           [`button-${props.type}`]: true,
+          [props.customClass]: props.customClass,
         })
       }
       target={props.target || '_self'}

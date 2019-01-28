@@ -71,7 +71,7 @@ $animation5Height: 460px;
   .top-section {
     position: relative;
     height: 720px;
-    background-image: linear-gradient(0deg, $startColor 0%, $intermediateColor 51%, $endColor 100%);
+    background-image: linear-gradient(0deg, #571ED3 0%, #250875 100%);
     .animation {
       position: absolute;
       top: 0;
@@ -165,36 +165,21 @@ $animation5Height: 460px;
     }
   }
   .introduction-section {
-    background: #F9FAFA;
+    background: #FFFFFF;
+    .background-gray {
+      background: repeating-linear-gradient(-3deg, #FFFFFF 0, #FFFFFF 10%, #FAFAFA 10%, #FAFAFA 80%, #FFFFFF 80%, #FFFFFF 100%);
+    }
     .introduction-body {
       max-width: $contentWidth;
       box-sizing: border-box;
-      margin: 0 auto;
-      min-height: 640px;
+      margin: 0px auto;
+      min-height: 600px;
       padding: 0 40px;
       position: relative;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 40px;
-        height: 165px;
-        opacity: 0.3;
-        border-right: 1px solid #666;
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        left: 39px;
-        top: 165px;
-        width: 3px;
-        height: 17px;
-        background-image: linear-gradient(0deg, $startColor 0%, $intermediateColor 51%, $endColor 100%); 
-      }
       .introduction {
         display: inline-block;
         width: calc(100% - 726px);
@@ -204,7 +189,7 @@ $animation5Height: 460px;
           font-family: Avenir-Heavy;
           font-size: 36px;
           color: #333;
-          margin-bottom: 40px;
+          margin-bottom: 20px;
           word-break: break-word;
         }
         p {
@@ -212,11 +197,18 @@ $animation5Height: 460px;
           font-family: Avenir-Medium;
           font-size: 18px;
           color: #999;
+          margin-bottom: 20px;
+        }
+        .primary {
+          font-size: 14px;
+        }
+        .normal {
+          font-size: 14px;
+          color: #571ED3;
         }
       }
       img {
         width: 562px;
-        margin: 0 82px;
         max-width: 100%;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05);
       }
@@ -224,83 +216,10 @@ $animation5Height: 460px;
         .introduction {
           display: inline-block;
           width: 100%;
-          max-width: 100%; 
+          max-width: 100%;
         }
         img {
           margin: 0;
-        }
-      }
-    }
-  }
-  .feature-section {
-    box-sizing: border-box;
-    max-width: $contentWidth;
-    margin: 0 auto;
-    position: relative;
-    padding: 80px 40px 40px;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      margin: 0 auto;
-      height: 83px;
-      opacity: 0.3;
-      border-right: 1px solid #666;
-    }
-    &::after {
-      content: '';
-      position: absolute;
-      top: 66px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 3px;
-      height: 17px;
-      background-image: linear-gradient(0deg, $startColor 0%, $intermediateColor 51%, $endColor 100%); 
-    }
-    h3 {
-      font-family: Avenir-Heavy;
-      font-size: 36px;
-      color: #333;
-      text-align: center;
-      margin: 0 0 40px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      li {
-        vertical-align: top;
-        display: inline-block;
-        margin-bottom: 40px;
-        width: 50%;
-        img {
-          vertical-align: top;
-          width: 60px;
-          height: 60px;
-          margin-right: 20px;
-        }
-        div {
-          display: inline-block;
-          width: 80%;
-          h4 {
-            font-family: Avenir-Heavy;
-            font-size: 20px;
-            color: #333;
-            margin-top: 10px;
-          }
-          p {
-            font-family: Avenir-Medium;
-            font-size: 14px;
-            line-height: 20px;
-            color: #999;
-          }
-        }
-      }
-      @media screen and (max-width: 768px){
-        li {
-          width: 100%;
         }
       }
     }
@@ -330,7 +249,7 @@ $animation5Height: 460px;
         top: 48px;
         width: 3px;
         height: 17px;
-        background: #fff; 
+        background: #fff;
       }
       .left-part {
         display: inline-block;
@@ -416,7 +335,7 @@ $animation5Height: 460px;
       transform: translateX(-50%);
       width: 3px;
       height: 17px;
-      background-image: linear-gradient(0deg, $startColor 0%, $intermediateColor 51%, $endColor 100%); 
+      background-image: linear-gradient(0deg, $startColor 0%, $intermediateColor 51%, $endColor 100%);
     }
     h3 {
       font-family: Avenir-Heavy;

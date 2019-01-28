@@ -15,12 +15,12 @@ export default {
       {
         key: 'landscape',
         text: 'Landscape',
-        link: 'https://landscape.devnative.io/en-us/landscape/index.html',
+        link: 'https://design.devnative.io/en-us/landscape/index.html',
       },
       {
         key: 'evaluation',
         text: 'Evaluation',
-        link: 'https://landscape.devnative.io/en-us/evaluation/index.html',
+        link: 'https://design.devnative.io/en-us/evaluation/index.html',
       },
       {
         key: 'activities',
@@ -79,12 +79,12 @@ export default {
       {
         key: 'landscape',
         text: 'Landscape',
-        link: 'https://landscape.devnative.io/zh-cn/landscape/index.html',
+        link: 'https://design.devnative.io/zh-cn/landscape/index.html',
       },
       {
         key: 'evaluation',
         text: '测评',
-        link: 'https://landscape.devnative.io/zh-cn/evaluation/index.html',
+        link: 'https://design.devnative.io/zh-cn/evaluation/index.html',
       },
       {
         key: 'activities',

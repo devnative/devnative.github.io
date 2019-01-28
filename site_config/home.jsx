@@ -1,182 +1,58 @@
-import React from 'react';
-
 export default {
   'zh-cn': {
     brand: {
-      brandName: '开源产品品牌名称',
-      briefIntroduction: '关于开源产品的简单介绍',
-      buttons: [
-        {
-          text: '立即开始',
-          link: '/zh-cn/docs/demo1.html',
-          type: 'primary',
-        },
-        {
-          text: '查看Github',
-          link: '',
-          type: 'normal',
-        },
-      ],
+      brandName: '设计你的专属系统方案',
+      briefIntroduction: '可以通过架构页面很方便的构建出最主流的系统架构，通过评测信息选择出最合适的软件产品。同时还为你带来目前最火爆的开发者活动信息和产品更新信息。',
     },
-    introduction: {
-      title: '开源产品的介绍',
-      desc: '开源产品的简单介绍，提供一些该产品的优点、特性描述等',
+    landscape: {
+      title: '构建系统架构',
+      desc: '我们提供了目前最主流的互联网架构，可以轻松解决高可用、扩缩容、大并发等问题，满足绝大多数的业务需求。',
       img: '/img/architecture.png',
-    },
-    features: {
-      title: '特性一览',
-      list: [
-        {
-          img: '/img/feature_transpart.png',
-          title: '特性1',
-          content: '特性1的简单概括',
-        },
-        {
-          img: '/img/feature_loadbalances.png',
-          title: '特性2',
-          content: '特性2的简单概括',
-        },
-        {
-          img: '/img/feature_service.png',
-          title: '特性3',
-          content: '特性3的简单概括',
-        },
-        {
-          img: '/img/feature_hogh.png',
-          title: '特性4',
-          content: '特性4的简单概括',
-        },
-        {
-          img: '/img/feature_runtime.png',
-          title: '特性5',
-          content: '特性5的简单概括',
-        },
-        {
-          img: '/img/feature_maintenance.png',
-          title: '特性6',
-          content: '特性6的简单概括',
-        },
-      ],
-    },
-    start: {
-      title: '快速开始',
-      desc: '简单描述',
-      img: '/img/quick_start.png',
       button: {
-        text: '阅读更多',
-        link: '/zh-cn/docs/demo1.html',
-      },
+        type: 'primary',
+        text: '去生成架构图 >',
+        link: 'https://design.devnative.io/zh-cn/landscape/index.html',
+        target: '',
+      }
     },
-    users: {
-      title: '用户',
-      desc: <span>简单描述</span>,
-      list: [
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-      ],
+    evaluation: {
+      title: '选择合适的产品',
+      desc: '我们提供了专业的产品对比评测，让你在选择产品时不再迷茫。所有性能的评测数据，均来自开源评测工程，确保数据的客观性。',
+      img: '/img/architecture.png',
+      button: {
+        type: 'normal',
+        text: '开始进行测评 >',
+        link: 'https://design.devnative.io/zh-cn/evaluation/index.html',
+        target: '',
+      }
     },
   },
   'en-us': {
     brand: {
-      brandName: 'brandName',
-      briefIntroduction: 'some description of product',
-      buttons: [
-        {
-          text: 'Quick Start',
-          link: '/en-us/docs/demo1.html',
-          type: 'primary',
-        },
-        {
-          text: 'View on Github',
-          link: '',
-          type: 'normal',
-        },
-      ],
+      brandName: 'Design Your Custom Solution',
+      briefIntroduction: 'We will help you to build system landscape, and show you which application is suitable for your system. Meanwhile, the infomation of developers\' activities and prodocuts\' updates will be provided.',
     },
-    introduction: {
-      title: 'introduction title',
-      desc: 'some introduction of your product',
+    landscape: {
+      title: 'Build System Structure',
+      desc: 'We provide the most popular internet structures, which can help the application to solve a lot of questions, such as High Availability, Expansion, Concurrency, etc.',
       img: '/img/architecture.png',
-    },
-    features: {
-      title: 'Feature List',
-      list: [
-        {
-          img: '/img/feature_transpart.png',
-          title: 'feature1',
-          content: 'feature description',
-        },
-        {
-          img: '/img/feature_loadbalances.png',
-          title: 'feature2',
-          content: 'feature description',
-        },
-        {
-          img: '/img/feature_service.png',
-          title: 'feature3',
-          content: 'feature description',
-        },
-        {
-          img: '/img/feature_hogh.png',
-          title: 'feature4',
-          content: 'feature description',
-        },
-        {
-          img: '/img/feature_runtime.png',
-          title: 'feature5',
-          content: 'feature description',
-        },
-        {
-          img: '/img/feature_maintenance.png',
-          title: 'feature6',
-          content: 'feature description',
-        }
-      ]
-    },
-    start: {
-      title: 'Quick start',
-      desc: 'some description text',
-      img: '/img/quick_start.png',
       button: {
-        text: 'READ MORE',
-        link: '/en-us/docs/demo1.html',
-      },
+        type: 'primary',
+        text: 'Generate Graph >',
+        link: 'https://design.devnative.io/en-us/landscape/index.html',
+        target: '',
+      }
     },
-    users: {
-      title: 'users',
-      desc: <span>some description</span>,
-      list: [
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-        '/img/users_alibaba.png',
-      ],
+    evaluation: {
+      title: 'Choose the suitable products',
+      desc: 'When you want to choose products, comparion may help you. In order to ensure fairness, all of the performance data is from the open source project in github.',
+      img: '/img/architecture.png',
+      button: {
+        type: 'normal',
+        text: 'Evaluation now >',
+        link: 'https://design.devnative.io/en-us/evaluation/index.html',
+        target: '',
+      }
     },
   },
 };

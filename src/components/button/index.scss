@@ -4,17 +4,17 @@
   height: 48px;
   line-height: 48px;
   min-width: 140px;
-  font-family: Avenir-Heavy;
+  font-family: PingFangSC-Semibold, Avenir-Heavy;
   font-size: 16px;
   color: #FFF;
   text-align: center;
   border-radius: 4px;
   text-decoration: none;
   &-primary {
-    background: #4190FF;
+    background: #571ED3;
   }
   &-normal {
     background: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #571ED3;
   }
 }
