@@ -26,6 +26,16 @@ export default {
         target: '',
       }
     },
+    news: {
+      more: '更多',
+      link: '/zh-cn/news/index.html',
+      target: '',
+    },
+    acts: {
+      more: '更多',
+      link: '/zh-cn/activities/index.html',
+      target: '',
+    }
   },
   'en-us': {
     brand: {
@@ -54,5 +64,15 @@ export default {
         target: '',
       }
     },
+    news: {
+      more: 'More',
+      link: '/en-us/news/index.html',
+      target: '',
+    },
+    acts: {
+      more: 'More',
+      link: '/en-us/activities/index.html',
+      target: '',
+    }
   },
 };

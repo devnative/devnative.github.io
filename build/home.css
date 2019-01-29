@@ -249,6 +249,28 @@
     width: 100%;
     text-align: center;
     padding: 0; } }
+.slider {
+  overflow: hidden; }
+  .slider .slider-list {
+    overflow: visible; }
+    .slider .slider-list .slider-screen {
+      display: inline-flex;
+      justify-content: space-around;
+      overflow: hidden; }
+  .slider .slider-control {
+    text-align: center;
+    margin-top: 20px; }
+    .slider .slider-control .slider-control-item {
+      cursor: pointer;
+      display: inline-block;
+      width: 20px;
+      height: 4px;
+      margin-right: 4px;
+      background: #ccc; }
+      .slider .slider-control .slider-control-item-active {
+        width: 40px;
+        height: 6px;
+        background-image: linear-gradient(-90deg, #03DDE4 0%, #30AFED 51%, #8755FF 100%); }
 .button {
   box-sizing: border-box;
   display: inline-block;
@@ -257,15 +279,16 @@
   min-width: 140px;
   font-family: PingFangSC-Semibold, Avenir-Heavy;
   font-size: 16px;
-  color: #FFF;
   text-align: center;
   border-radius: 4px;
   text-decoration: none; }
   .button-primary {
-    background: #571ED3; }
+    background: #571ED3;
+    color: #FFF; }
   .button-normal {
     background: transparent;
-    border: 1px solid #571ED3; }
+    border: 1px solid #571ED3;
+    color: #571ED3; }
 @charset "UTF-8";
 @font-face {
   font-family: octicons-link;
@@ -1836,8 +1859,7 @@ h1, h2, h3, h4, h5, h6 {
       .home-page .introduction-section .introduction-body .introduction .primary {
         font-size: 14px; }
       .home-page .introduction-section .introduction-body .introduction .normal {
-        font-size: 14px;
-        color: #571ED3; }
+        font-size: 14px; }
     .home-page .introduction-section .introduction-body img {
       width: 562px;
       max-width: 100%;
@@ -1850,126 +1872,63 @@ h1, h2, h3, h4, h5, h6 {
       .home-page .introduction-section .introduction-body img {
         margin: 0; } }
 
-.home-page .start-section {
-  background-image: linear-gradient(0deg, #03DDE4 0%, #30AFED 51%, #8755FF 100%); }
-  .home-page .start-section .start-body {
-    max-width: 1280px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    height: 260px;
-    padding: 35px 40px;
-    position: relative; }
-    .home-page .start-section .start-body::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 20px;
-      height: 100%;
-      opacity: 0.3;
-      border-right: 1px solid #fff; }
-    .home-page .start-section .start-body::after {
-      content: '';
-      position: absolute;
-      left: 19px;
-      top: 48px;
-      width: 3px;
-      height: 17px;
-      background: #fff; }
-    .home-page .start-section .start-body .left-part {
-      display: inline-block;
-      width: 50%;
-      vertical-align: top; }
-      .home-page .start-section .start-body .left-part h3 {
-        font-family: Avenir-Heavy;
-        font-size: 36px;
-        color: #FFF;
-        margin: 0; }
-      .home-page .start-section .start-body .left-part p {
-        opacity: 0.8;
-        font-family: Avenir-Medium;
-        font-size: 18px;
-        color: #FFF;
-        line-height: 24px;
-        margin: 6px 0 12px; }
-      .home-page .start-section .start-body .left-part a {
-        font-family: Avenir-Heavy;
-        font-size: 14px;
-        color: #2DACEC;
-        text-align: center;
-        display: inline-block;
-        width: 140px;
-        height: 48px;
-        line-height: 48px;
-        background: #FFF;
-        border-radius: 4px; }
-    .home-page .start-section .start-body .right-part {
-      display: inline-block;
-      width: 50%;
-      font-size: 0;
-      margin-top: 15px; }
-      .home-page .start-section .start-body .right-part img {
-        margin-left: 5%;
-        width: 500px; }
-    @media screen and (max-width: 1050px) {
-      .home-page .start-section .start-body {
-        height: 474px; }
-      .home-page .start-section .start-body .left-part {
-        width: 100%; }
-      .home-page .start-section .start-body .right-part {
-        width: 100%;
-        margin-top: 38px; }
-        .home-page .start-section .start-body .right-part img {
-          max-width: 100%;
-          margin-left: 0; } }
-
-.home-page .users-section {
-  box-sizing: border-box;
+.home-page .events-section {
+  position: relative;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 80px 40px 40px;
-  position: relative; }
-  .home-page .users-section::before {
-    content: '';
+  box-sizing: border-box;
+  padding: 80px 40px 60px; }
+  @media screen and (max-width: 640px) {
+    .home-page .events-section {
+      padding: 0; } }
+  .home-page .events-section .more {
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0 auto;
-    height: 83px;
-    opacity: 0.3;
-    border-right: 1px solid #666; }
-  .home-page .users-section::after {
-    content: '';
-    position: absolute;
-    top: 66px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 3px;
-    height: 17px;
-    background-image: linear-gradient(0deg, #03DDE4 0%, #30AFED 51%, #8755FF 100%); }
-  .home-page .users-section h3 {
+    top: 115px;
+    right: 50px;
+    font-size: 14px;
+    color: #333333; }
+  .home-page .events-section h3 {
     font-family: Avenir-Heavy;
     font-size: 36px;
     color: #333;
     text-align: center;
-    margin-bottom: 40px; }
-  .home-page .users-section p {
-    font-family: Avenir-Medium;
-    font-size: 14px;
-    color: #666;
-    text-align: center;
     margin: 0 0 40px; }
-    .home-page .users-section p a {
-      color: #1e6bb8;
-      text-decoration: none; }
-  .home-page .users-section .users {
-    display: inline-block;
-    text-align: center; }
-    .home-page .users-section .users img {
-      margin-right: 10px;
-      width: 140px;
-      height: 80px;
-      margin-bottom: 40px; }
+  .home-page .events-section .event-card {
+    width: 373px;
+    font-size: 0; }
+    .home-page .events-section .event-card img {
+      width: 373px;
+      height: 209px; }
+    @media screen and (max-width: 320px) {
+      .home-page .events-section .event-card {
+        width: 320px; }
+        .home-page .events-section .event-card img {
+          width: 320px;
+          height: 179px; } }
+    .home-page .events-section .event-card .event-introduction {
+      padding: 20px;
+      background: #F8F8F8; }
+      .home-page .events-section .event-card .event-introduction h4 {
+        font-family: Avenir-Heavy;
+        font-size: 20px;
+        color: #333;
+        margin: 0 0 10px; }
+      .home-page .events-section .event-card .event-introduction p {
+        font-family: Avenir-Medium;
+        font-size: 14px;
+        color: #666;
+        margin: 0; }
+      .home-page .events-section .event-card .event-introduction .date-section {
+        display: inline-block;
+        width: 100%;
+        font-family: Avenir-Medium;
+        font-size: 12px;
+        color: #999;
+        margin-top: 10px; }
+        .home-page .events-section .event-card .event-introduction .date-section .arrow {
+          width: 8px;
+          height: 13px;
+          float: right; }
 
 @media screen and (max-width: 640px) {
   .home-page .introduction-section {

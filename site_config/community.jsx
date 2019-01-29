@@ -5,6 +5,7 @@ export default {
     barText: 'Community',
     events: {
       title: 'Events & News',
+      more: 'Get More',
       list: [
         {
           img: '/img/brhtqqzh.jpeg',
@@ -170,6 +171,7 @@ export default {
     barText: '社区',
     events: {
       title: '事件 & 新闻',
+      more: '了解更多',
       list: [
         {
           img: '/img/brhtqqzh.jpeg',

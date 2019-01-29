@@ -204,7 +204,6 @@ $animation5Height: 460px;
         }
         .normal {
           font-size: 14px;
-          color: #571ED3;
         }
       }
       img {
@@ -224,148 +223,71 @@ $animation5Height: 460px;
       }
     }
   }
-  .start-section {
-    background-image: linear-gradient(0deg, $startColor 0%, $intermediateColor 51%, $endColor 100%);
-    .start-body {
-      max-width: $contentWidth;
-      margin: 0 auto;
-      box-sizing: border-box;
-      height: 260px;
-      padding: 35px 40px;
-      position: relative;
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 20px;
-        height: 100%;
-        opacity: 0.3;
-        border-right: 1px solid #fff;
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        left: 19px;
-        top: 48px;
-        width: 3px;
-        height: 17px;
-        background: #fff;
-      }
-      .left-part {
-        display: inline-block;
-        width: 50%;
-        vertical-align: top;
-        h3 {
-          font-family: Avenir-Heavy;
-          font-size: 36px;
-          color: #FFF;
-          margin: 0;
-        }
-        p {
-          opacity: 0.8;
-          font-family: Avenir-Medium;
-          font-size: 18px;
-          color: #FFF;
-          line-height: 24px;
-          margin: 6px 0 12px;
-        }
-        a {
-          font-family: Avenir-Heavy;
-          font-size: 14px;
-          color: $brandColor;
-          text-align: center;
-          display: inline-block;
-          width: 140px;
-          height: 48px;
-          line-height: 48px;
-          background: #FFF;
-          border-radius: 4px;
-        }
-      }
-      .right-part {
-        display: inline-block;
-        width: 50%;
-        font-size: 0;
-        margin-top: 15px;
-        img {
-          margin-left: 5%;
-          width: 500px;
-        }
-      }
-      @media screen and (max-width: 1050px){
-        & {
-          height: 474px;
-        }
-        .left-part {
-          width: 100%;
-        }
-        .right-part {
-          width: 100%;
-          margin-top: 38px;
-          img {
-            max-width: 100%;
-            margin-left: 0;
-          }
-        }
-      }
-    }
-  }
-  .users-section {
-    box-sizing: border-box;
+  .events-section {
+    position: relative;
     max-width: $contentWidth;
     margin: 0 auto;
-    padding: 80px 40px 40px;
-    position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      margin: 0 auto;
-      height: 83px;
-      opacity: 0.3;
-      border-right: 1px solid #666;
+    box-sizing: border-box;
+    padding: 80px 40px 60px;
+    @media screen and (max-width: $mobileWidth) {
+      padding: 0;
     }
-    &::after {
-      content: '';
+    .more {
       position: absolute;
-      top: 66px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 3px;
-      height: 17px;
-      background-image: linear-gradient(0deg, $startColor 0%, $intermediateColor 51%, $endColor 100%);
+      top: 115px;
+      right: 50px;
+      font-size: 14px;
+      color: #333333;
     }
     h3 {
       font-family: Avenir-Heavy;
       font-size: 36px;
       color: #333;
       text-align: center;
-      margin-bottom: 40px;
-    }
-    p {
-      font-family: Avenir-Medium;
-      font-size: 14px;
-      color: #666;
-      text-align: center;
       margin: 0 0 40px;
-      a {
-        color: #1e6bb8;
-        text-decoration: none;
-      }
     }
-    .users {
-      // display: flex;
-      // flex-wrap: wrap;
-      // justify-content: space-between;
-      display: inline-block;
-      text-align: center;
+    .event-card {
+      width: 373px;
+      font-size: 0;
       img {
-        margin-right: 10px;
-        width: 140px;
-        height: 80px;
-        margin-bottom: 40px;
+        width: 373px;
+        height: 209px;
+      }
+      @media screen and (max-width: $mobileWidth / 2) {
+        width: 320px;
+        img {
+          width: 320px;
+          height: 179px;
+        }
+      }
+      .event-introduction {
+        padding: 20px;
+        background: #F8F8F8;
+        h4 {
+          font-family: Avenir-Heavy;
+          font-size: 20px;
+          color: #333;
+          margin: 0 0 10px;
+        }
+        p {
+          font-family: Avenir-Medium;
+          font-size: 14px;
+          color: #666;
+          margin: 0;
+        }
+        .date-section {
+          display: inline-block;
+          width: 100%;
+          font-family: Avenir-Medium;
+          font-size: 12px;
+          color: #999;
+          margin-top: 10px;
+          .arrow {
+            width: 8px;
+            height: 13px;
+            float: right;
+          }
+        }
       }
     }
   }
