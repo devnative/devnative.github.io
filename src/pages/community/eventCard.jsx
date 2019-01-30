@@ -5,15 +5,7 @@ import Icon from '../../components/icon';
 
 const createFooter = (event, type, more) => {
   switch (type) {
-    case 'arrow':
-      return (
-        <a className="date-section" href={getLink(event.link)} target={event.target || '_self'}>
-          {event.dateStr}
-          <img className="arrow" src={getLink('/img/system/arrow_right.png')} />
-        </a>
-      );
     case 'button':
-    default:
       return (
         <div style={{ textAlign: 'center', marginTop: 80, marginBottom: 20 }}>
           <Button type="normal" link={getLink(event.link)} target={event.target || '_self'}>
@@ -21,6 +13,14 @@ const createFooter = (event, type, more) => {
             <Icon type="arrow" size="7px" />
           </Button>
         </div>
+      );
+    case 'arrow':
+    default:
+      return (
+        <a className="date-section" href={getLink(event.link)} target={event.target || '_self'}>
+          {event.dateStr}
+          <img className="arrow" src={getLink('/img/system/arrow_right.png')} />
+        </a>
       );
   }
 };

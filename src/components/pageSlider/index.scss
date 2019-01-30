@@ -8,6 +8,10 @@
       overflow: hidden;
       display: inline-block;
       vertical-align: top;
+      .slider-item {
+        display: inline-block;
+        margin: 10px 12px;
+      }
     }
   }
   .slider-control {
