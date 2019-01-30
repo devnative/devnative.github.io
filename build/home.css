@@ -263,6 +263,16 @@
     .button-normal:hover {
       background: #571ED3;
       color: #FFF; }
+.dn-arrow {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border-top: 2px solid #bfbfbf;
+  border-left: 2px solid #bfbfbf;
+  transition: all 250ms ease-in-out;
+  text-decoration: none;
+  color: transparent; }
 @charset "UTF-8";
 @font-face {
   font-family: octicons-link;

@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../components/button';
 import { getLink } from '../../../utils';
+import Icon from '../../components/icon';
 
 const createFooter = (event, type, more) => {
   switch (type) {
@@ -15,7 +16,10 @@ const createFooter = (event, type, more) => {
     default:
       return (
         <div style={{ textAlign: 'center', marginTop: 80, marginBottom: 20 }}>
-          <Button type="normal" link={getLink(event.link)} target={event.target || '_self'}>{more}</Button>
+          <Button type="normal" link={getLink(event.link)} target={event.target || '_self'}>
+            {more}
+            <Icon type="arrow" size="7px" />
+          </Button>
         </div>
       );
   }

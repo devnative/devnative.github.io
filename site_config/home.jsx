@@ -9,7 +9,7 @@ export default {
       desc: '我们提供了目前最主流的互联网架构，可以轻松解决高可用、扩缩容、大并发等问题，满足绝大多数的业务需求。',
       img: '/img/architecture.png',
       button: {
-        type: 'primary',
+        type: 'normal',
         text: '去生成架构图',
         link: 'https://design.devnative.io/zh-cn/landscape/index.html',
         target: '',
@@ -47,7 +47,7 @@ export default {
       desc: 'We provide the most popular internet structures, which can help the application to solve a lot of questions, such as High Availability, Expansion, Concurrency, etc.',
       img: '/img/architecture.png',
       button: {
-        type: 'primary',
+        type: 'normal',
         text: 'Generate Graph',
         link: 'https://design.devnative.io/en-us/landscape/index.html',
         target: '',

@@ -1,7 +1,7 @@
 @import '../../variables.scss';
 
 .footer-container {
-  background-image: linear-gradient(0deg, #571ED3 0%, #250875 100%);
+  background-image: linear-gradient(0deg, $brandColor 0%, #250875 100%);
   .footer-body {
     max-width: $contentWidth;
     margin: 0 auto;

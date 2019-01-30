@@ -9,7 +9,7 @@ export default {
     pageMenu: [
       {
         key: 'home', // 用作顶部菜单的选中
-        text: 'HOME',
+        text: 'Home',
         link: '/en-us/index.html',
       },
       {

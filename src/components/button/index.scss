@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .button {
   box-sizing: border-box;
   display: inline-block;
@@ -10,20 +12,20 @@
   border-radius: 2px;
   text-decoration: none;
   &-primary {
-    background: #571ED3;
+    background: $brandColor;
     color: #FFF;
     &:hover {
       background: transparent;
-      border: 1px solid #571ED3;
-      color: #571ED3;
+      border: 1px solid $brandColor;
+      color: $brandColor;
     }
   }
   &-normal {
     background: transparent;
-    border: 1px solid #571ED3;
-    color: #571ED3;
+    border: 1px solid $brandColor;
+    color: $brandColor;
     &:hover {
-      background: #571ED3;
+      background: $brandColor;
       color: #FFF;
     }
   }

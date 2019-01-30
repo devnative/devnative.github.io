@@ -6,6 +6,7 @@ import Button from '../../components/button';
 import Footer from '../../components/footer';
 import Language from '../../components/language';
 import Slider from '../../components/slider';
+import Icon from '../../components/icon';
 import EventCard from '../../pages/community/eventCard';
 import homeConfig from '../../../site_config/home';
 import communityConfig from '../../../site_config/community';
@@ -85,8 +86,9 @@ class Home extends Language {
             <div className="introduction">
               <h3>{landscape.title}</h3>
               <p>{landscape.desc}</p>
-              <Button customClass="primary" type={landscape.button.type} link={landscape.button.link} target={landscape.button.target}>
+              <Button type={landscape.button.type} link={landscape.button.link} target={landscape.button.target}>
                 {landscape.button.text}
+                <Icon type="arrow" size="7px" />
               </Button>
             </div>
           </div>
@@ -96,7 +98,10 @@ class Home extends Language {
             <div className="introduction">
               <h3>{evaluation.title}</h3>
               <p>{evaluation.desc}</p>
-              <Button customClass="normal" type={evaluation.button.type} link={evaluation.button.link} target={evaluation.button.target}>{evaluation.button.text}</Button>
+              <Button type={evaluation.button.type} link={evaluation.button.link} target={evaluation.button.target}>
+                {evaluation.button.text}
+                <Icon type="arrow" size="7px" />
+              </Button>
             </div>
             <img src={getLink(evaluation.img)} />
           </div>
@@ -104,7 +109,10 @@ class Home extends Language {
         {
           eventList.length > 0 &&
           (<section className="events-section">
-            <a className="more" target={news.target} href={news.link}>{news.more}</a>
+            <a className="more" target={news.target} href={news.link}>
+              {news.more}
+              <Icon type="arrow" size="7px" style={{ borderColor: '#333333' }} />
+            </a>
             <h3>{events.title}</h3>
             <Slider>
               {eventList.map((event, i) => (
@@ -116,7 +124,10 @@ class Home extends Language {
         {
           actList.length > 0 &&
           (<section className="events-section">
-            <a className="more" target={acts.target} href={acts.link}>{acts.more}</a>
+            <a className="more" target={acts.target} href={acts.link}>
+              {acts.more}
+              <Icon type="arrow" size="7px" style={{ borderColor: '#333333' }} />
+            </a>
             <h3>{activities.title}</h3>
             <Slider>
               {actList.map((act, i) => (
