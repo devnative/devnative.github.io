@@ -6,14 +6,14 @@ import Bar from '../../components/bar';
 import PageSlider from '../../components/pageSlider';
 import EventCard from '../community/eventCard';
 import Footer from '../../components/footer';
-import activityConfig from '../../../site_config/activity';
+import newsConfig from '../../../site_config/news';
 import './index.scss';
 
-class Activities extends Language {
+class News extends Language {
 
   render() {
     const language = this.getLanguage();
-    const { barText, activities } = activityConfig[language];
+    const { barText, events } = newsConfig[language];
     return (
       <div className="community-page">
         <Header
@@ -26,7 +26,7 @@ class Activities extends Language {
         <Bar img="/img/system/community.png" text={barText} />
         <section className="events-section">
           <PageSlider pageSize={9}>
-            {activities.list.map((item, i) => (
+            {events.list.map((item, i) => (
               <EventCard event={item} key={i} />
             ))}
           </PageSlider>
@@ -37,6 +37,6 @@ class Activities extends Language {
   }
 }
 
-document.getElementById('root') && ReactDOM.render(<Activities />, document.getElementById('root'));
+document.getElementById('root') && ReactDOM.render(<News />, document.getElementById('root'));
 
-export default Activities;
+export default News;

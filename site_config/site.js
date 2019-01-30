@@ -30,7 +30,7 @@ export default {
       {
         key: 'news',
         text: 'News',
-        link: '/en-us/community/index.html',
+        link: '/en-us/news/index.html',
       },
     ],
     disclaimer: {
