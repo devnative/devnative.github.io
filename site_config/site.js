@@ -34,38 +34,21 @@ export default {
       },
     ],
     disclaimer: {
-      title: 'Disclaimer',
-      content: 'the disclaimer content',
-    },
-    documentation: {
-      title: 'Documentation',
-      list: [
-        {
-          text: 'Overview',
-          link: '/en-us/docs/demo1.html',
-        },
-        {
-          text: 'Quick start',
-          link: '/en-us/docs/demo2.html',
-        },
-        {
-          text: 'Developer guide',
-          link: '/en-us/docs/dir/demo3.html',
-        },
-      ],
-    },
-    resources: {
-      title: 'Resources',
-      list: [
-        {
-          text: 'Blog',
-          link: '/en-us/blog/index.html',
-        },
-        {
-          text: 'Community',
-          link: '/en-us/community/index.html',
-        },
-      ],
+      zhihu: {
+        text: 'ZhiHu Account',
+        link: '#',
+        target: '',
+      },
+      email: {
+        text: 'Email',
+        link: 'mailto:#',
+        target: '',
+      },
+      recruit: {
+        text: 'Recruit',
+        link: '#',
+        target: '',
+      }
     },
     copyright: 'Copyright © 2019 The Develop Native Authors. All rights reserved.',
   },
@@ -98,38 +81,21 @@ export default {
       },
     ],
     disclaimer: {
-      title: '免责声明',
-      content: '免责声明的具体内容',
-    },
-    documentation: {
-      title: '文档',
-      list: [
-        {
-          text: '概览',
-          link: '/zh-cn/docs/demo1.html',
-        },
-        {
-          text: '快速开始',
-          link: '/zh-cn/docs/demo2.html',
-        },
-        {
-          text: '开发者指南',
-          link: '/zh-cn/docs/dir/demo3.html',
-        },
-      ],
-    },
-    resources: {
-      title: '资源',
-      list: [
-        {
-          text: '博客',
-          link: '/zh-cn/blog/index.html',
-        },
-        {
-          text: '社区',
-          link: '/zh-cn/community/index.html',
-        },
-      ],
+      zhihu: {
+        text: '知乎机构号',
+        link: '#',
+        target: '',
+      },
+      email: {
+        text: '官方邮箱',
+        link: 'mailto: #',
+        target: '',
+      },
+      recruit: {
+        text: '招贤纳士',
+        link: '#',
+        target: '',
+      }
     },
     copyright: 'Copyright © 2019 The Develop Native Authors. All rights reserved.',
   },

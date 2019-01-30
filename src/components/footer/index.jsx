@@ -13,38 +13,19 @@ class Footer extends React.Component {
 
   render() {
     const { logo, language } = this.props;
-    const dataSource = siteConfig[language];
+    const { disclaimer: { zhihu, email, recruit }, copyright } = siteConfig[language];
     return (
       <footer className="footer-container">
         <div className="footer-body">
           <img src={getLink(logo)} />
           <div className="cols-container">
-            <div className="col col-12">
-              <h3>{dataSource.disclaimer.title}</h3>
-              <p>{dataSource.disclaimer.content}</p>
-            </div>
-            <div className="col col-6">
-              <dl>
-                <dt>{dataSource.documentation.title}</dt>
-                {
-                  dataSource.documentation.list.map((d, i) => (
-                    <dd key={i}><a href={getLink(d.link)} target={d.target || '_self'}>{d.text}</a></dd>
-                  ))
-                }
-              </dl>
-            </div>
-            <div className="col col-6">
-            <dl>
-            <dt>{dataSource.resources.title}</dt>
-            {
-              dataSource.resources.list.map((d, i) => (
-                <dd key={i}><a href={getLink(d.link)} target={d.target || '_self'}>{d.text}</a></dd>
-              ))
-            }
-            </dl>
-            </div>
+            <a className="link" href={zhihu.link}>{zhihu.text}</a>
+            <a className="link" href={email.link}>{email.text}</a>
+            <a className="link" href={recruit.link}>{recruit.text}</a>
           </div>
-          <div className="copyright"><span>{dataSource.copyright}</span></div>
+          <div className="copyright">
+            <span>{copyright}</span>
+          </div>
         </div>
       </footer>
     );

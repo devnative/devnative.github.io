@@ -85,7 +85,9 @@ class Home extends Language {
             <div className="introduction">
               <h3>{landscape.title}</h3>
               <p>{landscape.desc}</p>
-              <Button customClass="primary" type={landscape.button.type} link={landscape.button.link} target={landscape.button.target}>{landscape.button.text}</Button>
+              <Button customClass="primary" type={landscape.button.type} link={landscape.button.link} target={landscape.button.target}>
+                {landscape.button.text}
+              </Button>
             </div>
           </div>
         </section>
@@ -102,7 +104,7 @@ class Home extends Language {
         {
           eventList.length > 0 &&
           (<section className="events-section">
-            <a className="more" target={news.target} href={news.link}>{news.more} &gt;</a>
+            <a className="more" target={news.target} href={news.link}>{news.more}</a>
             <h3>{events.title}</h3>
             <Slider>
               {eventList.map((event, i) => (
@@ -114,7 +116,7 @@ class Home extends Language {
         {
           actList.length > 0 &&
           (<section className="events-section">
-            <a className="more" target={acts.target} href={acts.link}>{acts.more} &gt;</a>
+            <a className="more" target={acts.target} href={acts.link}>{acts.more}</a>
             <h3>{activities.title}</h3>
             <Slider>
               {actList.map((act, i) => (

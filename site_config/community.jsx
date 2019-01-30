@@ -175,8 +175,8 @@ export default {
       list: [
         {
           img: '/img/brhtqqzh.jpeg',
-          title: '这是标题',
-          content: '这是内容',
+          title: '这是标题这是标题这是标题这是标题这是标题这',
+          content: '这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容这',
           dateStr: 'May 12nd，2018',
           link: '/zh-cn/blog/blog1.html',
         },

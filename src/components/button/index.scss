@@ -7,15 +7,24 @@
   font-family: PingFangSC-Semibold, Avenir-Heavy;
   font-size: 16px;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 2px;
   text-decoration: none;
   &-primary {
     background: #571ED3;
     color: #FFF;
+    &:hover {
+      background: transparent;
+      border: 1px solid #571ED3;
+      color: #571ED3;
+    }
   }
   &-normal {
     background: transparent;
     border: 1px solid #571ED3;
     color: #571ED3;
+    &:hover {
+      background: #571ED3;
+      color: #FFF;
+    }
   }
 }

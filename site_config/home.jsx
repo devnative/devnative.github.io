@@ -10,7 +10,7 @@ export default {
       img: '/img/architecture.png',
       button: {
         type: 'primary',
-        text: '去生成架构图 >',
+        text: '去生成架构图',
         link: 'https://design.devnative.io/zh-cn/landscape/index.html',
         target: '',
       }
@@ -21,7 +21,7 @@ export default {
       img: '/img/architecture.png',
       button: {
         type: 'normal',
-        text: '开始进行测评 >',
+        text: '开始进行测评',
         link: 'https://design.devnative.io/zh-cn/evaluation/index.html',
         target: '',
       }
@@ -48,7 +48,7 @@ export default {
       img: '/img/architecture.png',
       button: {
         type: 'primary',
-        text: 'Generate Graph >',
+        text: 'Generate Graph',
         link: 'https://design.devnative.io/en-us/landscape/index.html',
         target: '',
       }
@@ -59,7 +59,7 @@ export default {
       img: '/img/architecture.png',
       button: {
         type: 'normal',
-        text: 'Evaluation now >',
+        text: 'Evaluation now',
         link: 'https://design.devnative.io/en-us/evaluation/index.html',
         target: '',
       }

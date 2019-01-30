@@ -8,13 +8,13 @@ const createFooter = (event, type, more) => {
       return (
         <a className="date-section" href={getLink(event.link)} target={event.target || '_self'}>
           {event.dateStr}
-          <img className="arrow" src={getLink('/img/system/arrow_right.png')}/>
+          <img className="arrow" src={getLink('/img/system/arrow_right.png')} />
         </a>
       );
     case 'button':
     default:
       return (
-        <div style={{ textAlign: 'center' }}>
+        <div style={{ textAlign: 'center', marginTop: 80, marginBottom: 20 }}>
           <Button type="normal" link={getLink(event.link)} target={event.target || '_self'}>{more}</Button>
         </div>
       );
