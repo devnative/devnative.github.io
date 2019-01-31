@@ -3096,7 +3096,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     color: #FFFFFF;
     text-align: justify;
     font-family: PingFangSC-Medium;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat; }
     .blog-detail-page .blog-banner .blog-banner-content .title {
       font-size: 24px;
@@ -3134,3 +3134,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   padding: 80px 20%;
   margin: 0 auto;
   max-width: 735px; }
+  @media screen and (max-width: 640px) {
+    .blog-detail-page .blog-content {
+      padding: 80px 8%; } }

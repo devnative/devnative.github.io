@@ -1701,88 +1701,10 @@ h1, h2, h3, h4, h5, h6 {
   fill: currentColor;
   overflow: hidden; }
 
-@keyframes fallingStar1 {
-  0% {
-    transform: translate3d(0, -100%, 0);
-    opacity: 1; }
-  100% {
-    transform: translate3d(0, 500px, 0);
-    opacity: 0; } }
-
-@keyframes fallingStar2 {
-  0% {
-    transform: translate3d(0, -100%, 0);
-    opacity: 1; }
-  100% {
-    transform: translate3d(0, 375px, 0);
-    opacity: 0; } }
-
-@keyframes fallingStar3 {
-  0% {
-    transform: translate3d(0, -100%, 0);
-    opacity: 1; }
-  100% {
-    transform: translate3d(0, 248px, 0);
-    opacity: 0; } }
-
-@keyframes fallingStar4 {
-  0% {
-    transform: translate3d(0, -100%, 0);
-    opacity: 1; }
-  100% {
-    transform: translate3d(0, 570px, 0);
-    opacity: 0; } }
-
-@keyframes fallingStar5 {
-  0% {
-    transform: translate3d(0, -100%, 0);
-    opacity: 1; }
-  100% {
-    transform: translate3d(0, 460px, 0);
-    opacity: 0; } }
-
 .home-page .top-section {
   position: relative;
   height: 720px;
   background-image: linear-gradient(0deg, #571ED3 0%, #250875 100%); }
-  .home-page .top-section .animation {
-    position: absolute;
-    top: 0;
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
-    transform: scaleX(0.5); }
-    .home-page .top-section .animation::before {
-      content: '';
-      height: 16px;
-      opacity: 1;
-      border-right: 4px solid #fff;
-      position: absolute;
-      left: -2px;
-      transform: translate3d(0, -100%, 0); }
-    .home-page .top-section .animation1 {
-      left: 15%;
-      height: 500px; }
-      .home-page .top-section .animation1::before {
-        animation: fallingStar1 1.3s infinite ease-in-out; }
-    .home-page .top-section .animation2 {
-      left: 35%;
-      height: 375px; }
-      .home-page .top-section .animation2::before {
-        animation: fallingStar2 1.5s infinite ease-in-out; }
-    .home-page .top-section .animation3 {
-      left: 52%;
-      height: 248px; }
-      .home-page .top-section .animation3::before {
-        animation: fallingStar3 2s infinite ease-in-out; }
-    .home-page .top-section .animation4 {
-      left: 65%;
-      height: 570px; }
-      .home-page .top-section .animation4::before {
-        animation: fallingStar4 1.5s infinite ease-in-out; }
-    .home-page .top-section .animation5 {
-      left: 85%;
-      height: 460px; }
-      .home-page .top-section .animation5::before {
-        animation: fallingStar5 1.3s infinite ease-in-out; }
   .home-page .top-section .vertical-middle {
     position: absolute;
     left: 0;
