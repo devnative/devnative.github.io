@@ -53,6 +53,11 @@ export default {
         link: '/en-us/blog/blog7.html',
       },
     ],
+    detail: {
+      labelAuthor: 'Author',
+      labelTime: 'Publish Time',
+      labelCategory: 'Tech Category',
+    }
   },
   'zh-cn': {
     barText: '博客',
@@ -108,5 +113,10 @@ export default {
         link: '/zh-cn/blog/blog7.html',
       },
     ],
+    detail: {
+      labelAuthor: '作者',
+      labelTime: '发布时间',
+      labelCategory: '技术分类',
+    }
   },
 };

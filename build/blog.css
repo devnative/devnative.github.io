@@ -1746,6 +1746,13 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
 .blog-list-page .blog-container {
   max-width: 1280px;
   margin: 0 auto;

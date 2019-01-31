@@ -6,18 +6,120 @@ import 'whatwg-fetch'; // fetch polyfill
 import Language from '../../components/language';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
+import Button from '../../components/button';
+import ActivityConfig from '../../../site_config/activity';
+import BlogConfig from '../../../site_config/blog';
+import { getLink } from '../../../utils';
+import Icon from '../../components/icon';
+import '../../../utils/iconfont.js';
 import './index.scss';
 
 // 锚点正则
 const anchorReg = /^#[^/]/;
 // 相对地址正则，包括./、../、直接文件夹名称开头、直接文件开头
 const relativeReg = /^((\.{1,2}\/)|([\w-]+[/.]))/;
+
+/**
+ * 创建 Banner
+ * @param meta
+ * @param language
+ * @returns {*}
+ */
+const createBanner = (meta, language) => {
+  if (Object.keys(meta).length === 0) {
+    return null;
+  }
+  const { type } = meta;
+  if (type === 'activity') {
+    const { title, subtitle, count, time, address, link, target, img } = meta;
+    const { detail: { labelCount, labelTime, labelAddress, btnText } } = ActivityConfig[language];
+    return (
+      <div className="blog-banner">
+        <div className="blog-banner-content" style={{ backgroundImage: `url(${img})` }}>
+          <p className="title">{title}</p>
+          <p className="subtitle">{subtitle}</p>
+          <div className="labels">
+            <span className="label">
+              <svg className="icon banner-icon" aria-hidden="true">
+                <use xlinkHref="#icon-user" />
+              </svg>
+              {labelCount} :
+            </span>
+            <span className="desc">{count}</span>
+            <span className="label">
+              <svg className="icon banner-icon" aria-hidden="true">
+                <use xlinkHref="#icon-icon-time" />
+              </svg>
+              {labelTime} :
+            </span>
+            <span className="desc">{time}</span>
+            <span className="label">
+              <svg className="icon banner-icon" aria-hidden="true">
+                <use xlinkHref="#icon-location1" />
+              </svg>
+              {labelAddress} :
+            </span>
+            <span className="desc">{address}</span>
+          </div>
+          <Button className="blog-button" type="normal" link={getLink(link)} target={target || '_self'}>
+            {btnText}
+            <Icon type="arrow" size="7px" />
+          </Button>
+        </div>
+      </div>
+    );
+  } else if (type === 'news') {
+    const { title, subtitle, author, time, category, img } = meta;
+    const { detail: { labelAuthor, labelTime, labelCategory } } = BlogConfig[language];
+    return (
+      <div className="blog-banner">
+        <div className="blog-banner-content" style={{ backgroundImage: `url(${img})` }}>
+          <p className="title">{title}</p>
+          <p className="subtitle">{subtitle}</p>
+          <div className="labels">
+            <span className="label">
+              <svg className="icon banner-icon" aria-hidden="true">
+                <use xlinkHref="#icon-user" />
+              </svg>
+              {labelAuthor} :
+            </span>
+            <span className="desc">{author}</span>
+          </div>
+          <div className="labels">
+            <span className="label">
+              <svg className="icon banner-icon" aria-hidden="true">
+                <use xlinkHref="#icon-icon-time" />
+              </svg>
+              {labelTime} :
+            </span>
+            <span className="desc">{time}</span>
+          </div>
+          <div className="labels">
+            <span className="label">
+              <svg className="icon banner-icon" aria-hidden="true">
+                <use xlinkHref="#icon-code" />
+              </svg>
+              {labelCategory} :
+            </span>
+            {category.split(',').map((item) => {
+              return (<span className="cate-babel">{item}</span>);
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
+  return null;
+};
+
+
 class BlogDetail extends Language {
 
   constructor(props) {
     super(props);
     this.state = {
       __html: '',
+      meta: {},
     };
   }
 
@@ -28,6 +130,7 @@ class BlogDetail extends Language {
     .then((md) => {
       this.setState({
         __html: md && md.__html ? md.__html : '',
+        meta: md.meta || {},
       });
     });
     this.markdownContainer.addEventListener('click', (e) => {
@@ -84,21 +187,23 @@ class BlogDetail extends Language {
   render() {
     const language = this.getLanguage();
     const __html = this.props.__html || this.state.__html;
+    const meta = this.state.meta;
     return (
       <div className="blog-detail-page">
         <Header
           type="normal"
           currentKey="blog"
-          logo="/img/_logo_colorful.png"
+          logo="/img/temp/_logo_colorful.png"
           language={language}
           onLanguageChange={this.onLanguageChange}
         />
+        {createBanner(meta, language)}
         <section
           className="blog-content markdown-body"
           ref={(node) => { this.markdownContainer = node; }}
           dangerouslySetInnerHTML={{ __html }}
         />
-        <Footer logo="/img/_logo_gray.png" language={language} />
+        <Footer logo="/img/temp/_logo_gray.png" language={language} />
       </div>
     );
   }

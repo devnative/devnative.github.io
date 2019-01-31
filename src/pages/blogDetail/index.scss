@@ -3,9 +3,63 @@
 @import '../../markdown.scss';
 
 .blog-detail-page {
+  .blog-banner {
+    margin: $headerHeight auto 0;
+    background-color: #0086b3;// TODO
+    .blog-banner-content{
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 60px 40px 80px;
+      color: #FFFFFF;
+      text-align: justify;
+      font-family: PingFangSC-Medium;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      .title {
+        font-size: 24px;
+        line-height: 33px;
+      }
+      .subtitle {
+        opacity: 0.8;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      .labels {
+        margin-top: 20px;
+      }
+      .label {
+        font-size: 14px;
+        margin-right: 10px;
+      }
+      .desc {
+        opacity: 0.8;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        margin-right: 40px;
+      }
+      .banner-icon {
+        font-size: 14px;
+        margin-right: 6px;
+      }
+      .cate-babel {
+        background-color: #424245;
+        padding: 3px 10px;
+        font-size: 14px;
+        margin-right: 20px;
+      }
+    }
+    .blog-button {
+      margin-top: 40px;
+      border-color: #FFFFFF;
+      color: #FFFFFF;
+      .dn-arrow{
+        border-color: #FFFFFF;
+      }
+    }
+  }
   .blog-content {
     padding: 80px 20%;
-    margin: $headerHeight auto 0;
+    margin: 0 auto;
     max-width: 735px;
   }
 }

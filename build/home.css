@@ -1694,6 +1694,13 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
 @keyframes fallingStar1 {
   0% {
     transform: translate3d(0, -100%, 0);

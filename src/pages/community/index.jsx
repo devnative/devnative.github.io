@@ -23,7 +23,7 @@ class Community extends Language {
         <Header
           currentKey="community"
           type="normal"
-          logo="/img/_logo_colorful.png"
+          logo="/img/temp/_logo_colorful.png"
           language={language}
           onLanguageChange={this.onLanguageChange}
         />
@@ -68,7 +68,7 @@ class Community extends Language {
           }
           </div>
         </section>
-        <Footer logo="/img/_logo_gray.png" language={language} />
+        <Footer logo="/img/temp/_logo_gray.png" language={language} />
       </div>
     );
   }

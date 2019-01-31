@@ -57,7 +57,7 @@ class Home extends Language {
     const { activities } = activityConfig[language];
     const actList = sliceArray(activities.list, 6);
     const { headerType } = this.state;
-    const headerLogo = headerType === 'primary' ? '/img/_logo_white.png' : '/img/_logo_colorful.png';
+    const headerLogo = headerType === 'primary' ? '/img/temp/_logo_white.png' : '/img/temp/_logo_colorful.png';
     return (
       <div className="home-page">
         <section className="top-section">
@@ -136,7 +136,7 @@ class Home extends Language {
             </Slider>
           </section>)
         }
-        <Footer logo="/img/_logo_gray.png" language={language} />
+        <Footer logo="/img/temp/_logo_gray.png" language={language} />
       </div>
     );
   }

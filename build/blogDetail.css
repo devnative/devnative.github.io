@@ -172,6 +172,44 @@
     .header-container .header-body .header-menu-open .menu-item-primary-active a, .header-container .header-body .header-menu-open .menu-item-normal-active a {
       color: #fff;
       opacity: 1; } }
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  min-width: 140px;
+  font-family: PingFangSC-Semibold, Avenir-Heavy;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 2px;
+  text-decoration: none; }
+  .button-primary {
+    background: #571ED3;
+    color: #FFF; }
+    .button-primary:hover {
+      background: transparent;
+      border: 1px solid #571ED3;
+      color: #571ED3; }
+  .button-normal {
+    background: transparent;
+    border: 1px solid #571ED3;
+    color: #571ED3; }
+    .button-normal:hover {
+      background: #571ED3;
+      color: #FFF; }
+.dn-arrow {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border-top: 2px solid #571ED3;
+  border-left: 2px solid #571ED3;
+  transition: all 250ms ease-in-out;
+  text-decoration: none;
+  color: transparent; }
+
+.dn-arrow.next {
+  transform: rotate(135deg); }
 .footer-container {
   background-image: linear-gradient(0deg, #571ED3 0%, #250875 100%); }
   .footer-container .footer-body {
@@ -1634,6 +1672,13 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
 @font-face {
   font-family: octicons-link;
   src: url(data:font/woff;charset=utf-8;base64,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) format("woff"); }
@@ -3041,7 +3086,51 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .katex .mtable .col-align-r > .vlist {
   text-align: right; }
 
+.blog-detail-page .blog-banner {
+  margin: 66px auto 0;
+  background-color: #0086b3; }
+  .blog-detail-page .blog-banner .blog-banner-content {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 60px 40px 80px;
+    color: #FFFFFF;
+    text-align: justify;
+    font-family: PingFangSC-Medium;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+    .blog-detail-page .blog-banner .blog-banner-content .title {
+      font-size: 24px;
+      line-height: 33px; }
+    .blog-detail-page .blog-banner .blog-banner-content .subtitle {
+      opacity: 0.8;
+      font-size: 16px;
+      line-height: 22px; }
+    .blog-detail-page .blog-banner .blog-banner-content .labels {
+      margin-top: 20px; }
+    .blog-detail-page .blog-banner .blog-banner-content .label {
+      font-size: 14px;
+      margin-right: 10px; }
+    .blog-detail-page .blog-banner .blog-banner-content .desc {
+      opacity: 0.8;
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      margin-right: 40px; }
+    .blog-detail-page .blog-banner .blog-banner-content .banner-icon {
+      font-size: 14px;
+      margin-right: 6px; }
+    .blog-detail-page .blog-banner .blog-banner-content .cate-babel {
+      background-color: #424245;
+      padding: 3px 10px;
+      font-size: 14px;
+      margin-right: 20px; }
+  .blog-detail-page .blog-banner .blog-button {
+    margin-top: 40px;
+    border-color: #FFFFFF;
+    color: #FFFFFF; }
+    .blog-detail-page .blog-banner .blog-button .dn-arrow {
+      border-color: #FFFFFF; }
+
 .blog-detail-page .blog-content {
   padding: 80px 20%;
-  margin: 66px auto 0;
+  margin: 0 auto;
   max-width: 735px; }

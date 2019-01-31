@@ -19,7 +19,7 @@ class Activities extends Language {
         <Header
           currentKey="community"
           type="normal"
-          logo="/img/_logo_colorful.png"
+          logo="/img/temp/_logo_colorful.png"
           language={language}
           onLanguageChange={this.onLanguageChange}
         />
@@ -31,7 +31,7 @@ class Activities extends Language {
             ))}
           </PageSlider>
         </section>
-        <Footer logo="/img/_logo_gray.png" language={language} />
+        <Footer logo="/img/temp/_logo_gray.png" language={language} />
       </div>
     );
   }
