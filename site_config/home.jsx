@@ -22,7 +22,8 @@ export default {
       button: {
         type: 'normal',
         text: '开始进行测评',
-        link: 'https://design.devnative.io/zh-cn/evaluation/index.html',
+        // link: 'https://design.devnative.io/zh-cn/evaluation/index.html',
+        link: '/zh-cn/evaluation/index.html',
         target: '',
       }
     },
@@ -60,7 +61,8 @@ export default {
       button: {
         type: 'normal',
         text: 'Evaluation now',
-        link: 'https://design.devnative.io/en-us/evaluation/index.html',
+        // link: 'https://design.devnative.io/en-us/evaluation/index.html',
+        link: '/en-us/evaluation/index.html',
         target: '',
       }
     },
