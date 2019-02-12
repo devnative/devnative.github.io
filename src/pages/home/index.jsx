@@ -61,6 +61,7 @@ class Home extends Language {
     return (
       <div className="home-page">
         <section className="top-section">
+          <img src="/img/custom/bg_banner@2x.png" />
           <Header
             currentKey="home"
             type={headerType}

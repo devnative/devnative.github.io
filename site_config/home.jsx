@@ -7,7 +7,7 @@ export default {
     landscape: {
       title: '构建系统架构',
       desc: '我们提供了目前最主流的互联网架构，可以轻松解决高可用、扩缩容、大并发等问题，满足绝大多数的业务需求。',
-      img: '/img/architecture.png',
+      img: '/img/custom/pic_power1@2x.png',
       button: {
         type: 'normal',
         text: '去生成架构图',
@@ -18,7 +18,7 @@ export default {
     evaluation: {
       title: '选择合适的产品',
       desc: '我们提供了专业的产品对比评测，让你在选择产品时不再迷茫。所有性能的评测数据，均来自开源评测工程，确保数据的客观性。',
-      img: '/img/architecture.png',
+      img: '/img/custom/pic_power2@2x.png',
       button: {
         type: 'normal',
         text: '开始进行测评',
@@ -45,7 +45,7 @@ export default {
     landscape: {
       title: 'Build System Structure',
       desc: 'We provide the most popular internet structures, which can help the application to solve a lot of questions, such as High Availability, Expansion, Concurrency, etc.',
-      img: '/img/architecture.png',
+      img: '/img/custom/pic_power1@2x.png',
       button: {
         type: 'normal',
         text: 'Generate Graph',
@@ -56,7 +56,7 @@ export default {
     evaluation: {
       title: 'Choose the suitable products',
       desc: 'When you want to choose products, comparion may help you. In order to ensure fairness, all of the performance data is from the open source project in github.',
-      img: '/img/architecture.png',
+      img: '/img/custom/pic_power2@2x.png',
       button: {
         type: 'normal',
         text: 'Evaluation now',

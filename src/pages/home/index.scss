@@ -4,8 +4,14 @@
 .home-page {
   .top-section {
     position: relative;
-    height: 720px;
+    min-height: 570px;
     background-image: linear-gradient(0deg, $brandColor 0%, #250875 100%);
+    //background: repeating-linear-gradient(-3deg, #FFFFFF 0, #FFFFFF 10%, $brandColor 10%, #250875 80%, #250875 80%, #250875 100%);
+    & > img {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: block;
+    }
     .vertical-middle {
       position: absolute;
       left: 0;
@@ -66,9 +72,9 @@
       justify-content: space-between;
       .introduction {
         display: inline-block;
-        width: calc(100% - 726px);
+        width: calc(100% - 550px);
         min-width: 300px;
-        max-width: 590px;
+        max-width: 650px;
         h3 {
           font-family: Avenir-Heavy;
           font-size: 36px;
@@ -91,9 +97,9 @@
         }
       }
       img {
-        width: 562px;
+        width: 350px;
         max-width: 100%;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05);
+        //box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05);
       }
       @media screen and (max-width: 1106px){
         .introduction {

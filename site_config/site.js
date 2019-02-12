@@ -36,17 +36,17 @@ export default {
     disclaimer: {
       zhihu: {
         text: 'ZhiHu Account',
-        link: '#',
+        link: '#', // TODO 链接
         target: '',
       },
       email: {
         text: 'Email',
-        link: 'mailto:#',
+        link: 'mailto:#', // TODO 链接
         target: '',
       },
       recruit: {
         text: 'Recruit',
-        link: '#',
+        link: '#', // TODO 链接
         target: '',
       }
     },
@@ -83,17 +83,17 @@ export default {
     disclaimer: {
       zhihu: {
         text: '知乎机构号',
-        link: '#',
+        link: '#', // TODO 链接
         target: '',
       },
       email: {
         text: '官方邮箱',
-        link: 'mailto: #',
+        link: 'mailto:#', // TODO 链接
         target: '',
       },
       recruit: {
         text: '招贤纳士',
-        link: '#',
+        link: '#', // TODO 链接
         target: '',
       }
     },

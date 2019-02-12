@@ -3,33 +3,33 @@ pages:
  home:
   # 首页配置
   zh-cn:
-   title: '网页标签title'
-   keywords: '关键词1，关键词2'
-   description: '页面内容简介'
+   title: 'Developer Native | 设计你的专属系统方案'
+   keywords: 'developer，native，系统架构，评测'
+   description: '设计你的专属系统方案'
   # home config
   en-us:
-   title: 'page title'
-   keywords: 'keyword1,keyword2'
-   description: 'page description'
+   title: 'Developer Native | Design Your Custom Solution'
+   keywords: 'developer,native,system landscape,evaluation'
+   description: 'Design Your Custom Solution'
  community:
   # 社区页配置
   zh-cn:
-   title: '网页标签title'
-   keywords: '关键词1，关键词2'
-   description: '页面内容简介'
+   title: 'Developer Native'
+   keywords: 'developer，native，system landscape，evaluation'
+   description: 'Developer Native'
   # community page config
   en-us:
-   title: 'page title'
-   keywords: 'keyword1,keyword2'
-   description: 'page description'
+   title: 'Developer Native'
+   keywords: 'developer,native,system landscape,evaluation'
+   description: 'Developer Native'
  blog:
   # 博客列表页配置
   zh-cn:
-   title: '网页标签title'
-   keywords: '关键词1，关键词2'
-   description: '页面内容简介'
+   title: 'Developer Native'
+   keywords: 'developer，native，system landscape，evaluation'
+   description: 'Developer Native'
   en-us:
    # blog list page config
-   title: 'page title'
-   keywords: 'keyword1,keyword2'
-   description: 'page description'
+   title: 'Developer Native'
+   keywords: 'developer,native,system landscape,evaluation'
+   description: 'Developer Native'

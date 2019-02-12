@@ -193,7 +193,8 @@
   .button-normal {
     background: transparent;
     border: 1px solid #571ED3;
-    color: #571ED3; }
+    color: #571ED3;
+    padding: 0 10px; }
     .button-normal:hover {
       background: #571ED3;
       color: #FFF; }
@@ -1703,8 +1704,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-page .top-section {
   position: relative;
-  height: 720px;
+  min-height: 570px;
   background-image: linear-gradient(0deg, #571ED3 0%, #250875 100%); }
+  .home-page .top-section > img {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: block; }
   .home-page .top-section .vertical-middle {
     position: absolute;
     left: 0;
@@ -1757,9 +1762,9 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between; }
     .home-page .introduction-section .introduction-body .introduction {
       display: inline-block;
-      width: calc(100% - 726px);
+      width: calc(100% - 550px);
       min-width: 300px;
-      max-width: 590px; }
+      max-width: 650px; }
       .home-page .introduction-section .introduction-body .introduction h3 {
         font-family: Avenir-Heavy;
         font-size: 36px;
@@ -1777,9 +1782,8 @@ h1, h2, h3, h4, h5, h6 {
       .home-page .introduction-section .introduction-body .introduction .normal {
         font-size: 14px; }
     .home-page .introduction-section .introduction-body img {
-      width: 562px;
-      max-width: 100%;
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05); }
+      width: 350px;
+      max-width: 100%; }
     @media screen and (max-width: 1106px) {
       .home-page .introduction-section .introduction-body .introduction {
         display: inline-block;
