@@ -7,7 +7,7 @@ time: 2019.01.20 - 2019.01.21
 address: 中国
 link: http://aisc.alibaba-inc.com/
 target: _blank
-img: /img/temp/_back_image.png
+img: /img/custom/bg_banner@2x.png
 ---
 
 # 博客2

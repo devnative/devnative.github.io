@@ -21,7 +21,7 @@ class Blog extends Language {
         <Header
           type="normal"
           currentKey="blog"
-          logo="/img/temp/_logo_colorful.png"
+          logo="/img/custom/logo@2x.png"
           language={language}
           onLanguageChange={this.onLanguageChange}
         />
@@ -47,7 +47,7 @@ class Blog extends Language {
             </ul>
           </div>
         </section>
-        <Footer logo="/img/temp/_logo_gray.png" language={language} />
+        <Footer logo="/img/custom/logo_white@2x.png" language={language} />
       </div>
     );
   }

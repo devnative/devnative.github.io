@@ -5,7 +5,7 @@ subtitle: world world world world
 author: rambo
 time: 2019.01.20 - 2019.01.21 
 category: java,js,ts
-img: /img/temp/_back_image.png
+img: /img/custom/bg_banner@2x.png
 ---
 
 # blog3

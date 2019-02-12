@@ -12,7 +12,7 @@
         "address": "Beijing",
         "link": "http://aisc.alibaba-inc.com/",
         "target": "_blank",
-        "img": "/img/temp/_back_image.png"
+        "img": "/img/custom/bg_banner@2x.png"
       }
     },
     {
@@ -27,7 +27,7 @@
         "address": "Beijing",
         "link": "http://aisc.alibaba-inc.com/",
         "target": "_blank",
-        "img": "/img/temp/_back_image.png"
+        "img": "/img/custom/bg_banner@2x.png"
       }
     },
     {
@@ -42,7 +42,7 @@
         "address": "Beijing",
         "link": "http://aisc.alibaba-inc.com/",
         "target": "_blank",
-        "img": "/img/temp/_back_image.png"
+        "img": "/img/custom/bg_banner@2x.png"
       }
     },
     {
@@ -55,7 +55,7 @@
         "author": "rambo",
         "time": "2019.01.20 - 2019.01.21",
         "category": "java,js,ts",
-        "img": "/img/temp/_back_image.png"
+        "img": "/img/custom/bg_banner@2x.png"
       }
     },
     {
@@ -68,7 +68,7 @@
         "author": "rambo",
         "time": "2019.01.20 - 2019.01.21",
         "category": "java,js,ts",
-        "img": "/img/temp/_back_image.png"
+        "img": "/img/custom/bg_banner@2x.png"
       }
     },
     {
@@ -81,7 +81,7 @@
         "author": "rambo",
         "time": "2019.01.20 - 2019.01.21",
         "category": "java,js,ts",
-        "img": "/img/temp/_back_image.png"
+        "img": "/img/custom/bg_banner@2x.png"
       }
     }
   ],
@@ -98,7 +98,7 @@
         "address": "中国",
         "link": "http://aisc.alibaba-inc.com/",
         "target": "_blank",
-        "img": "/img/temp/_back_image.png"
+        "img": "/img/custom/bg_banner@2x.png"
       }
     },
     {
@@ -113,7 +113,7 @@
         "address": "中国",
         "link": "http://aisc.alibaba-inc.com/",
         "target": "_blank",
-        "img": "/img/temp/_back_image.png"
+        "img": "/img/custom/bg_banner@2x.png"
       }
     },
     {
@@ -128,7 +128,7 @@
         "address": "中国",
         "link": "http://aisc.alibaba-inc.com/",
         "target": "_blank",
-        "img": "/img/temp/_back_image.png"
+        "img": "/img/custom/bg_banner@2x.png"
       }
     },
     {
@@ -141,7 +141,7 @@
         "author": "rambo",
         "time": "2019.01.20 - 2019.01.21",
         "category": "java,js,ts",
-        "img": "/img/temp/_back_image.png"
+        "img": "/img/custom/bg_banner@2x.png"
       }
     },
     {
@@ -154,7 +154,7 @@
         "author": "rambo",
         "time": "2019.01.20 - 2019.01.21",
         "category": "java,js,ts",
-        "img": "/img/temp/_back_image.png"
+        "img": "/img/custom/bg_banner@2x.png"
       }
     },
     {
@@ -167,7 +167,7 @@
         "author": "rambo",
         "time": "2019.01.20 - 2019.01.21",
         "category": "java,js,ts",
-        "img": "/img/temp/_back_image.png"
+        "img": "/img/custom/bg_banner@2x.png"
       }
     }
   ]

@@ -17,7 +17,7 @@
     line-height: 66px; }
     .header-container .header-body .logo {
       margin-left: 40px;
-      width: 96px;
+      width: 193px;
       vertical-align: sub; }
     .header-container .header-body .header-menu {
       float: right; }
@@ -255,7 +255,7 @@
     .footer-container .footer-body img {
       display: block;
       margin: 0 auto 40px;
-      height: 34px;
+      width: 193px;
       vertical-align: middle; }
     .footer-container .footer-body .cols-container {
       display: flex;
