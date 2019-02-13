@@ -20,7 +20,7 @@ export default {
       {
         key: 'evaluation',
         text: 'Evaluation',
-        link: 'https://design.devnative.io/en-us/evaluation/index.html',
+        link: '/en-us/evaluation/index.html',
       },
       {
         key: 'activities',
@@ -67,7 +67,7 @@ export default {
       {
         key: 'evaluation',
         text: '测评',
-        link: 'https://design.devnative.io/zh-cn/evaluation/index.html',
+        link: '/zh-cn/evaluation/index.html',
       },
       {
         key: 'activities',

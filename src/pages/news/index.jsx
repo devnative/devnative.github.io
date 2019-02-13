@@ -17,7 +17,7 @@ class News extends Language {
     return (
       <div className="community-page">
         <Header
-          currentKey="community"
+          currentKey="news"
           type="normal"
           logo="/img/custom/logo@2x.png"
           language={language}

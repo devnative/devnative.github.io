@@ -17,7 +17,7 @@ class Activities extends Language {
     return (
       <div className="community-page">
         <Header
-          currentKey="community"
+          currentKey="activities"
           type="normal"
           logo="/img/custom/logo@2x.png"
           language={language}

@@ -12,9 +12,9 @@ class Evaluation extends Language {
     const language = this.getLanguage();
     // const { barText, activities } = activityConfig[language];
     return (
-      <div className="community-page">
+      <div className="evaluation-page">
         <Header
-          currentKey="community"
+          currentKey="evaluation"
           type="normal"
           logo="/img/custom/logo@2x.png"
           language={language}
