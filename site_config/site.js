@@ -15,7 +15,7 @@ export default {
       {
         key: 'landscape',
         text: 'Landscape',
-        link: 'https://design.devnative.io/en-us/landscape/index.html',
+        link: '/en-us/landscape/index.html',
       },
       {
         key: 'evaluation',
@@ -62,7 +62,7 @@ export default {
       {
         key: 'landscape',
         text: 'Landscape',
-        link: 'https://design.devnative.io/zh-cn/landscape/index.html',
+        link: '/zh-cn/landscape/index.html',
       },
       {
         key: 'evaluation',

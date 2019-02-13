@@ -37,7 +37,7 @@ class InnerClass extends React.Component {
 }
 
 
-class Evaluation extends Language {
+class Landscape extends Language {
 
   render() {
     const language = this.getLanguage();
@@ -45,9 +45,9 @@ class Evaluation extends Language {
     return (
       <Router>
         <div>
-          <div className="evaluation-page">
+          <div className="landscape-page">
             <Header
-              currentKey="evaluation"
+              currentKey="landscape"
               type="normal"
               logo="/img/custom/logo@2x.png"
               language={language}
@@ -59,8 +59,8 @@ class Evaluation extends Language {
             </div>
           </div>
           <Switch>
-            <Redirect from="/:lang/evaluation/index.html" to="/:lang/evaluation/#rpc" />
-            <Route path="/:lang/evaluation/" component={InnerClass} />
+            <Redirect from="/:lang/landscape/index.html" to="/:lang/landscape/#rpc" />
+            <Route path="/:lang/landscape/" component={InnerClass} />
           </Switch>
           <Footer logo="/img/custom/logo_white@2x.png" language={language} />
         </div>
@@ -69,6 +69,6 @@ class Evaluation extends Language {
   }
 }
 
-document.getElementById('root') && ReactDOM.render(<Evaluation />, document.getElementById('root'));
+document.getElementById('root') && ReactDOM.render(<Landscape />, document.getElementById('root'));
 
-export default Evaluation;
+export default Landscape;
