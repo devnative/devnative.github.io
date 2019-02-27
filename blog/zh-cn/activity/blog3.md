@@ -5,7 +5,7 @@ subtitle: 大会的主题你们随便定
 count: 100
 time: 2019.01.20 - 2019.01.21 
 address: 中国
-link: http://aisc.alibaba-inc.com/
+link: https://devnative.github.io/
 target: _blank
 img: /img/custom/bg_banner@2x.png
 ---

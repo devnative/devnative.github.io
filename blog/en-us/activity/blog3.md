@@ -5,7 +5,7 @@ subtitle: world world world world
 count: 100
 time: 2019.01.20 - 2019.01.21 
 address: Beijing
-link: http://aisc.alibaba-inc.com/
+link: https://devnative.github.io/
 target: _blank
 img: /img/custom/bg_banner@2x.png
 ---

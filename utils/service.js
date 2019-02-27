@@ -2,11 +2,11 @@
  * 所有后端服务的请求接口
  */
 // 所有服务的列表
-const LANDSCAPE = 'http://106.15.104.211/landscape/';
+const LANDSCAPE = '//106.15.104.211/landscape/';
 // 产品详情
-const PRODUCTDETAIL = 'http://106.15.104.211/product/';
+const PRODUCTDETAIL = '//106.15.104.211/product/';
 // 评测页面
-const COMPARE = 'http://106.15.104.211/compare/get';
+const COMPARE = '//106.15.104.211/compare/get';
 
 /**
  * 获得所有的架构服务
@@ -45,7 +45,7 @@ const requestProductDetail = (id, language) => {
   })
 };
 
-// http://106.15.104.211/compare/get  POST  参数{"areaId":1,"language":"xx"}
+// //106.15.104.211/compare/get  POST  参数{"areaId":1,"language":"xx"}
 
 /**
  * 获取评测的数据
