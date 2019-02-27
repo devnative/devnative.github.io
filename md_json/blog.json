@@ -1,0 +1,174 @@
+{
+  "en-us": [
+    {
+      "filename": "blog1.md",
+      "link": "/en-us/blog/activity/blog1.html",
+      "meta": {
+        "type": "activity",
+        "title": "hello hello hello",
+        "subtitle": "world world world world",
+        "count": "100",
+        "time": "2019.01.20 - 2019.01.21",
+        "address": "Beijing",
+        "link": "http://aisc.alibaba-inc.com/",
+        "target": "_blank",
+        "img": "/img/custom/bg_banner@2x.png"
+      }
+    },
+    {
+      "filename": "blog2.md",
+      "link": "/en-us/blog/activity/blog2.html",
+      "meta": {
+        "type": "activity",
+        "title": "hello hello hello",
+        "subtitle": "world world world world",
+        "count": "100",
+        "time": "2019.01.20 - 2019.01.21",
+        "address": "Beijing",
+        "link": "http://aisc.alibaba-inc.com/",
+        "target": "_blank",
+        "img": "/img/custom/bg_banner@2x.png"
+      }
+    },
+    {
+      "filename": "blog3.md",
+      "link": "/en-us/blog/activity/blog3.html",
+      "meta": {
+        "type": "activity",
+        "title": "hello hello hello",
+        "subtitle": "world world world world",
+        "count": "100",
+        "time": "2019.01.20 - 2019.01.21",
+        "address": "Beijing",
+        "link": "http://aisc.alibaba-inc.com/",
+        "target": "_blank",
+        "img": "/img/custom/bg_banner@2x.png"
+      }
+    },
+    {
+      "filename": "blog1.md",
+      "link": "/en-us/blog/news/blog1.html",
+      "meta": {
+        "type": "news",
+        "title": "hello hello hello",
+        "subtitle": "world world world world",
+        "author": "rambo",
+        "time": "2019.01.20 - 2019.01.21",
+        "category": "java,js,ts",
+        "img": "/img/custom/bg_banner@2x.png"
+      }
+    },
+    {
+      "filename": "blog2.md",
+      "link": "/en-us/blog/news/blog2.html",
+      "meta": {
+        "type": "news",
+        "title": "hello hello hello",
+        "subtitle": "world world world world",
+        "author": "rambo",
+        "time": "2019.01.20 - 2019.01.21",
+        "category": "java,js,ts",
+        "img": "/img/custom/bg_banner@2x.png"
+      }
+    },
+    {
+      "filename": "blog3.md",
+      "link": "/en-us/blog/news/blog3.html",
+      "meta": {
+        "type": "news",
+        "title": "hello hello hello",
+        "subtitle": "world world world world",
+        "author": "rambo",
+        "time": "2019.01.20 - 2019.01.21",
+        "category": "java,js,ts",
+        "img": "/img/custom/bg_banner@2x.png"
+      }
+    }
+  ],
+  "zh-cn": [
+    {
+      "filename": "blog1.md",
+      "link": "/zh-cn/blog/activity/blog1.html",
+      "meta": {
+        "type": "activity",
+        "title": "即将召开一个大会",
+        "subtitle": "大会的主题你们随便定",
+        "count": "100",
+        "time": "2019.01.20 - 2019.01.21",
+        "address": "中国",
+        "link": "http://aisc.alibaba-inc.com/",
+        "target": "_blank",
+        "img": "/img/custom/bg_banner@2x.png"
+      }
+    },
+    {
+      "filename": "blog2.md",
+      "link": "/zh-cn/blog/activity/blog2.html",
+      "meta": {
+        "type": "activity",
+        "title": "即将召开一个大会",
+        "subtitle": "大会的主题你们随便定",
+        "count": "100",
+        "time": "2019.01.20 - 2019.01.21",
+        "address": "中国",
+        "link": "http://aisc.alibaba-inc.com/",
+        "target": "_blank",
+        "img": "/img/custom/bg_banner@2x.png"
+      }
+    },
+    {
+      "filename": "blog3.md",
+      "link": "/zh-cn/blog/activity/blog3.html",
+      "meta": {
+        "type": "activity",
+        "title": "即将召开一个大会",
+        "subtitle": "大会的主题你们随便定",
+        "count": "100",
+        "time": "2019.01.20 - 2019.01.21",
+        "address": "中国",
+        "link": "http://aisc.alibaba-inc.com/",
+        "target": "_blank",
+        "img": "/img/custom/bg_banner@2x.png"
+      }
+    },
+    {
+      "filename": "blog1.md",
+      "link": "/zh-cn/blog/news/blog1.html",
+      "meta": {
+        "type": "news",
+        "title": "hello hello hello",
+        "subtitle": "world world world world",
+        "author": "rambo",
+        "time": "2019.01.20 - 2019.01.21",
+        "category": "java,js,ts",
+        "img": "/img/custom/bg_banner@2x.png"
+      }
+    },
+    {
+      "filename": "blog2.md",
+      "link": "/zh-cn/blog/news/blog2.html",
+      "meta": {
+        "type": "news",
+        "title": "hello hello hello",
+        "subtitle": "world world world world",
+        "author": "rambo",
+        "time": "2019.01.20 - 2019.01.21",
+        "category": "java,js,ts",
+        "img": "/img/custom/bg_banner@2x.png"
+      }
+    },
+    {
+      "filename": "blog3.md",
+      "link": "/zh-cn/blog/news/blog3.html",
+      "meta": {
+        "type": "news",
+        "title": "hello hello hello",
+        "subtitle": "world world world world",
+        "author": "rambo",
+        "time": "2019.01.20 - 2019.01.21",
+        "category": "java,js,ts",
+        "img": "/img/custom/bg_banner@2x.png"
+      }
+    }
+  ]
+}

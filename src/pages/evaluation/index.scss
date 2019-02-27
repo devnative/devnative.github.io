@@ -1,0 +1,144 @@
+@import '../../variables.scss';
+@import '../../reset.scss';
+
+.evaluation-page {
+  .middle-container {
+    margin: 70px auto 0;
+    max-width: 1280px;
+  }
+  .tag-area {
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+  .evaluation-tag {
+    position: relative;
+    height: 40px;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    line-height: 40px;
+    color: #333333;
+    text-align: center;
+    padding-right: 0;
+    margin-right: 20px;
+    .name {
+      display: inline-block;
+      min-width: 90px;
+    }
+    .icon-duihao {
+      position: relative;
+      top: 5px;
+      height: 25px;
+      width: 25px;
+      color: #cccccc;
+    }
+    .ant-tag-checkable-checked {
+      .icon-duihao {
+        color: #ffffff;
+      }
+    }
+  }
+  .evaluation-check-tag {
+    height: 38px;
+    width: 38px;
+    margin-right: 0;
+    background-color: #ececec;
+  }
+  .ant-tag-checkable-checked {
+    background-color: $brandColor;
+  }
+
+  .ant-tag:active {
+
+  }
+
+  .custom-table {
+    display: flex;
+    border: 1px solid #cccccc;
+    overflow-x: auto;
+    margin-bottom: 80px;
+  }
+  .custom-column {
+    flex: 1;
+    max-width: 320px;
+    min-width: 150px;
+    border-right: 1px solid #cccccc;
+    &:nth-child(4) {
+      border-right: 0;
+    }
+  }
+  .custom-table-cell {
+    padding: 10px 20px;
+  }
+  .custom-scene {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .icon-tanhao {
+    color: #571ED3;
+    font-size: 16px;
+    margin-left: 5px;
+    align-self: center;
+  }
+  .custom-list-header {
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    .header-logo {
+      width: 120px;
+      height: 120px;
+      display: block;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      padding: 2px;
+      cursor: pointer;
+    }
+    .header-flex {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 120px;
+      padding: 0 10px;
+      font-family: PingFangSC-Medium;
+      overflow: hidden;
+    }
+    .header-name {
+      font-size: 24px;
+      color: #333333;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .header-star {
+      font-size: 20px;
+      color: #333333;
+    }
+    .header-star-desc {
+      font-size: 14px;
+      color: #999999;
+    }
+    .icon-star {
+      font-size: 22px;
+      color: #F57724;
+      margin-right: 5px;
+    }
+  }
+  .table-header {
+    font-size: 18px;
+    color: $brandColor;
+  }
+
+}
+
+@media (orientation: portrait) {
+
+}
+
+// 去除点击光晕特效
+[ant-click-animating-without-extra-node]:after {
+  border: 0 none;
+  opacity: 0;
+  animation:none;
+}

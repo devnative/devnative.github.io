@@ -1,0 +1,33 @@
+@import '../../variables.scss';
+
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  min-width: 140px;
+  font-family: PingFangSC-Semibold, Avenir-Heavy;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 2px;
+  text-decoration: none;
+  &-primary {
+    background: $brandColor;
+    color: #FFF;
+    &:hover {
+      background: transparent;
+      border: 1px solid $brandColor;
+      color: $brandColor;
+    }
+  }
+  &-normal {
+    background: transparent;
+    border: 1px solid $brandColor;
+    color: $brandColor;
+    padding: 0 10px;
+    &:hover {
+      background: $brandColor;
+      color: #FFF;
+    }
+  }
+}

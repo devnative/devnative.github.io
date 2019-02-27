@@ -1,0 +1,337 @@
+@import '../../variables.scss';
+@import '../../reset.scss';
+
+.landscape-page {
+  .middle-container {
+    margin: 70px auto 0;
+    max-width: 1280px;
+    font-family: PingFangSC-Medium;
+  }
+  .arch-title {
+    font-size: 36px;
+    color: #333333;
+    text-align: center;
+  }
+  .operator-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+  }
+  .icon-operator {
+    font-size: 28px;
+    color: #333333;
+    cursor: pointer;
+    margin-left: 20px;
+    &:hover {
+      color: $brandColor;
+    }
+  }
+  .architecture {
+    border: 1px solid #cccccc;
+    padding: 10px;
+  }
+  .arch-upper {
+    display: flex;
+    align-items: center;
+  }
+  .arch-ui {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .arch-ui-item {
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+    text-align: center;
+    padding: 15px 10px 10px;
+    > img {
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+    }
+  }
+  .arch-ui-item-label {
+    font-size: 12px;
+    color: #333333;
+  }
+  .arch-arrow {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+  }
+  .rotate180 {
+    transform: rotate(180deg);
+  }
+  .rotate270 {
+    transform: rotate(-90deg);
+  }
+  .arrow-base {
+    position: absolute;
+    bottom: -30px;
+  }
+  .arch-balance {
+
+  }
+  .arch-card {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .arch-cate-name {
+    font-size: 14px;
+  }
+  .arch-services {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  .arch-security {
+    flex: 1;
+  }
+  .arch-middle-section {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .stretch {
+      width: 100%;
+    }
+  }
+  .arch-others {
+    flex: 1;
+  }
+
+  .arch-base {
+    margin-top: 20px;
+    margin-left: 228px;
+    padding: 10px;
+    background: rgba(7,168,227,0.15);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    &-name {
+      font-size: 14px;
+      line-height: 16px;
+      color: #07A8E3;
+      width: 14px;
+      margin-right: 10px;
+      word-break: break-word;
+    }
+  }
+  .arch-container-right {
+    display: inline-block;
+  }
+
+  .arch-container {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    .arch-item {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      overflow: hidden;
+      position: relative;
+      background-color: #ffffff;
+    }
+    .arch-blank {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .arch-item-service {
+      height: 40px;
+      line-height: 40px;
+      color: $brandColor;
+    }
+    .arch-item:hover {
+      .arch-cate, .arch-logo, .arch-name {
+        opacity: 0.3;
+      }
+      .arch-hover {
+        opacity: 1;
+      }
+    }
+
+    .arch-cate {
+      height: 18px;
+      background-color: #999FBC;
+      color: #FFFFFF;
+      font-size: 12px;
+      line-height: 18px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .arch-logo {
+      width: 40px;
+      height: 40px;
+      display: block;
+      margin: 0 auto;
+    }
+    .arch-name {
+      font-size: 12px;
+      height: 20px;
+      line-height: 20px;
+      color: #666666;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .arch-hover {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .icon-hover {
+      font-size: 20px;
+      align-self: center;
+      margin: 6px;
+      cursor: pointer;
+      z-index: 100;
+    }
+    .icon-tanhao {
+      color: $brandColor;
+    }
+    .icon-chahao {
+      color: #E2384C;
+    }
+    .icon-jiahao {
+      font-size: 22px;
+      color: #aaaaaa;
+    }
+  }
+
+  .source-section {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 14px;
+    .source-area-name {
+      width: 20px;
+      margin-right: 10px;
+    }
+    .source-container {
+      flex: 1;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    .source-cate {
+      width: 50%;
+      margin-bottom: 8px;
+    }
+    .source-cate-header {
+      margin-bottom: 10px;
+    }
+    .source-cate-name {
+      display: inline-block;
+      height: 18px;
+      font-size: 14px;
+      line-height: 18px;
+      min-width: 80px;
+      text-align: center;
+      color: #ffffff;
+      background-color: #999FBC;
+      margin-right: 10px;
+      border-radius: 3px;
+    }
+    .source-report {
+      display: inline-block;
+      height: 18px;
+      font-size: 14px;
+      line-height: 18px;
+      color: $brandColor;
+      > img {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        margin-right: 2px;
+      }
+    }
+    .source-items {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    .source-item {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      background-color: #ffffff;
+      margin-right: 10px;
+      margin-bottom: 6px;
+      border-radius: 6px;
+      padding: 10px 0 0;
+      text-align: center;
+      cursor: pointer;
+    }
+    .selected {
+      border: 1px solid $brandColor;
+    }
+    .source-item:hover{
+      .source-hover, .source-logo, .source-name {
+        opacity: 1;
+      }
+
+    }
+    .source-logo {
+      opacity: 0.5;
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+    }
+    .source-name {
+      opacity: 0.5;
+      font-size: 12px;
+      height: 30px;
+      line-height: 30px;
+      color: #666666;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .source-hover {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+    }
+    .icon-hover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 18px;
+      margin: 6px;
+      cursor: pointer;
+      z-index: 100;
+    }
+    .icon-tanhao {
+      color: $brandColor;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+
+}

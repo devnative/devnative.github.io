@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.dn-arrow {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border-top: 2px solid $brandColor;
+  border-left: 2px solid $brandColor;
+  transition: all 250ms ease-in-out;
+  text-decoration: none;
+  color: transparent;
+}
+
+.dn-arrow.next {
+  transform: rotate(135deg);
+}
