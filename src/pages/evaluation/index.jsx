@@ -2,7 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
-import { Tabs, Tag, List, Tooltip, } from 'antd';
+import Tabs from 'antd/lib/tabs';
+import 'antd/lib/tabs/style/css';
+import Tag from 'antd/lib/tag';
+import 'antd/lib/tag/style/css';
+import List from 'antd/lib/list';
+import 'antd/lib/list/style/css';
+import Tooltip from 'antd/lib/tooltip';
+import 'antd/lib/tooltip/style/css';
 import queryString from 'query-string';
 
 import Language from '../../components/language';
@@ -13,7 +20,7 @@ import CustomIcon from '../../components/icon';
 import CustomModal from '../../components/modal';
 import evaluationConfig from '../../../site_config/evaluation';
 import {requestCompare, requestProductDetail} from '../../../utils/service';
-import '../../../utils/iconfont'
+import '../../../utils/iconfont';
 import './index.scss';
 
 const { TabPane } = Tabs;

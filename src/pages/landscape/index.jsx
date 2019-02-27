@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
-import {Modal, Tooltip} from 'antd';
+import Modal from 'antd/lib/modal';
+import 'antd/lib/modal/style/css';
+import Tooltip from 'antd/lib/tooltip';
+import 'antd/lib/tooltip/style/css';
 import domtoimage from 'dom-to-image';
 import queryString from 'query-string';
 import clipboard from 'clipboard-copy';
@@ -53,8 +56,8 @@ function ServiceBox(props){
     <div className="arch-card" style={{backgroundColor: backColor}}>
       <div className="arch-cate-name" style={{color: fontColor}}>{props.name}</div>
       <div className="arch-container">
-        {data.map(item => {
-          return (<div className="arch-item arch-item-service">
+        {data.map((item, i) => {
+          return (<div key={i} className="arch-item arch-item-service">
             {item}
           </div>)
         })}

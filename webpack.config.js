@@ -28,7 +28,14 @@ module.exports = {
     loaders: [
       {
         test: /\.js|jsx$/,
-        exclude: [/node_modules/, /build\/lib/, /\.min\.js$/],
+        exclude: [/build\/lib/, /\.min\.js$/],
+        include: [
+          /src/,
+          /utils/,
+          /site_config/,
+          /node_modules\/query-string\/index.js/,
+          /node_modules\/strict-uri-encode\/index.js/,
+        ],
         use: 'babel-loader',
       },
       {

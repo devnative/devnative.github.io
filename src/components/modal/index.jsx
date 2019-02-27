@@ -1,5 +1,8 @@
 import React from "react";
-import {Modal, Tag,} from "antd";
+import Modal from 'antd/lib/modal';
+import 'antd/lib/modal/style/css';
+import Tag from 'antd/lib/tag';
+import 'antd/lib/tag/style/css';
 
 import './index.scss';
 
@@ -67,7 +70,7 @@ export default function CustomModal (props){
             <div className="labels">
               {
                 labelArr.map((item, i) => {
-                  return <Tag className="label-tag" color={COLORSET[i%COLORSET.length]}>{item}</Tag>
+                  return <Tag key={i} className="label-tag" color={COLORSET[i % COLORSET.length]}>{item}</Tag>;
                 })
               }
             </div>
