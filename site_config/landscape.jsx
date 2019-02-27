@@ -1,0 +1,38 @@
+import React from 'react';
+
+export default {
+  'en-us': {
+    title: 'Java Micro Service Architecture Constitute',
+    app: 'app',
+    browser: 'browser',
+    iot: 'IoT',
+    loadText: 'Load Balance',
+    securityText: 'Security',
+    microServiceText: 'microService',
+    serviceText: 'Service',
+    logText: 'Log',
+    otherText: 'Other',
+    baseText: 'Base',
+    ok: 'OK',
+    cancel: 'Cancel',
+    confirmText: 'Do you want to remove all selected Items?',
+    copy: 'Copy URL Success',
+  },
+  'zh-cn': {
+    title: 'Java 微服务架构选型',
+    app: 'app',
+    browser: '浏览器',
+    iot: 'IoT',
+    loadText: '负载均衡',
+    securityText: '安全',
+    microServiceText: '微服务',
+    serviceText: '服务',
+    logText: '日志',
+    otherText: '其他',
+    baseText: '底层服务',
+    ok: '确认',
+    cancel: '取消',
+    confirmText: '确认清空所有的选择项吗？',
+    copy: '复制链接成功',
+  },
+};

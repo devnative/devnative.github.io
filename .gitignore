@@ -3,8 +3,3 @@ node_modules/
 .DS_Store
 npm-debug.log
 *.orig
-
-# TODO 构建的文件，上线时去除
-build/
-en-us/
-zh-cn/

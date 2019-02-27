@@ -1,0 +1,60 @@
+.modal-container {
+  width: 800px;
+  padding: 20px;
+  font-size: 12px;
+  .normal-text {
+    font-family: PingFangSC-Medium;
+    line-height: 17px;
+    color: #571ED3;
+  }
+  .modal-up {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .up-left > img {
+    width: 160px;
+    height: 160px;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  .up-right {
+    flex: 1;
+    font-family: PingFangSC-Medium;
+    .title {
+      font-size: 24px;
+      line-height: 33px;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+    .organization, .company {
+      margin-bottom: 10px;
+    }
+    .label-tag {
+      height: 22px;
+      line-height: 22px;
+    }
+  }
+
+  .modal-down {
+    display: flex;
+  }
+  .line-text {
+    margin-bottom: 10px;
+  }
+  .part {
+    flex: 1;
+  }
+  .label {
+    display: inline-block;
+    width: 94px;
+    color: #666666;
+  }
+  .down-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+// 移动端适配
